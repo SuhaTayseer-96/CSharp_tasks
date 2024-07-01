@@ -56,17 +56,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create a BMW object
-        BMW myBMW = new BMW("BMW", 2023, "Sedan", 75000m, "M3", "123456", "Black");
-
-        // Start the engine
-        myBMW.StartEngine();
-
-        // Print full information about the car
-        Console.WriteLine(myBMW.GetCarInfo());
-
-        // Stop the engine
-        myBMW.StopEngine();
+        Car car = new Car("Opel", 2006, "S", 15000m, "B4", "258963", "Green");
+Console.WriteLine(car.GetCarInfo());
+car.StartEngine();
+car.StopEngine();
+BMW myBMW = new BMW("BMW", 2023, "Sedan", 75000m, "M3", "123456", "Black");
+Console.WriteLine(myBMW.GetCarInfo());
+myBMW.StartEngine();
+myBMW.StopEngine();
     }
 }
 
